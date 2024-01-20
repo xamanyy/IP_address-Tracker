@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+  <script defer src="./js/script.js"></script>
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>
+    <div class="w-screen h-screen flex flex-col">
+        <div class="w-screen h-[18rem] bg-black">
+            <img  class="w-screen flex object-contain" src="./images/pattern-bg-desktop.png" alt=""/>
+            <h1 class="absolute top-[2rem] left-[40rem] text-[2rem] text-[white] font-bold">IP Address Tracker</h1>
+            <input id="search-ip" class="absolute top-[7rem] left-[33rem] w-[30rem] h-[0.7rem] rounded-[1.2rem] p-[1.5em] outline-none text-left" placeholder="Search for any IP address or domain" type="text"/> 
+            <div id="btn" class="flex justify-center items-center absolute top-[7rem] left-[59rem] w-[4rem] h-[3rem] bg-black rounded-tr-[1.2rem] rounded-br-[1.2rem] cursor-pointer">
+              <img src="./images/icon-arrow.svg" alt=""/>            
+            </div>
+          <div class="absolute flex justify-center top-[14rem] left-[8rem] w-[80rem] h-[10rem] p-[1.5rem] bg-white shadow-lg rounded-[1.5rem] z-10">
+             <div class="flex flex-col w-[15rem] h-[8rem] mr-[3rem]">
+              <label class=" text-[1rem] text-gray-500">IP Address</label>
+              <textarea id="ip" class="text-wrap mt-3 h-20 text-[1.3rem] text-black outline-none resize-none overflow-hidden" type="text"></textarea>
+             </div>
+             <div class="flex flex-col w-[15rem] h-[8rem] mr-[3rem]">
+              <label class=" text-[1rem] text-gray-500">Location</label>
+              <textarea id="location" class="mt-3 h-20 text-[1.3rem] outline-none text-black resize-none overflow-hidden" type="text"></textarea>
+             </div>
+             <div class="flex flex-col w-[15rem] h-[8rem] mr-[3rem]">
+              <label class="text-[1rem] text-gray-500">Timezone</label>
+              <textarea id="tmz" class="mt-3 h-20 text-[1.3rem] outline-none resize-none text-black overflow-hidden" type="text"></textarea>
+             </div>
+             <div class="flex flex-col w-[15rem] h-[8rem]">
+              <label class=" text-[1rem] text-gray-500">ISP</label>
+              <textarea id="isp" class="mt-3 h-20 text-[1.3rem] outline-none resize-none text-black overflow-hidden" type="text"></textarea>
+             </div>  
+          </div>
+        </div>
+        <div id="map" class="bg-black w-screen h-[30rem] z-[4]">
+
+        </div>
+
+    </div>
+</body>
+</html>
