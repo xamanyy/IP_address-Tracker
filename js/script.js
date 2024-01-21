@@ -7,7 +7,7 @@ const isp = document.querySelector('#isp');
 let map;
 
 let myIcon = L.icon({
-    iconUrl: "../images/icon-location.svg",
+    iconUrl: '../images/icon-location.svg',
     iconSize: [36, 42],
     iconAnchor: [22, 94],
     popupAnchor: [-3, -76],
